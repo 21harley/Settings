@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <header class="header" id="header"></header>
+    <section class="menu">
+        <nav class="menu__nav">
+          <div class="menu__nav--item" id="keyM">KEYBOARD&MOUSE</div>
+          <!--
+          <div class="menu__nav--item" id="keyG">GRAPHICS</div>
+          <div class="menu__nav--item" id="keyA">AUDIO</div>
+          -->
+          <div class="menu__nav--item open" id="keyP">GAMEPLAY</div>
+        </nav>
+    </section>
+    <section class="game" id="P">
+        <canvas class="game__canvas" id="canvas"></canvas>      
+    </section>
+    <section class="keyMouse" id="M">
+      <div class="keyMouse__KeyMB">
+         <button class="KeyMB__item openMB" id="kMo">MOUSE</button>
+         <button class="KeyMB__item" id="kBo">BEYBOARD</button>
+      </div>
+      <div class="container__Mouse">
+        <h4>MOUSE</h4>
+        <hr>
+        <div class="keyMouse__input">
+          <div class="keyMouse__input--item" id="item-1">
+              <p>Mouse Sensitivity</p> <p class="item__valor" id="valor1">20</p><input class="barra" id="v1" type="range" value="20" min="0" max="100">
+          </div>
+          <div class="keyMouse__input--item" id="item-2">
+              <p>Aim Down Sight</p> <p class="item__txt" id="txt1">Legacy</p><div class="button__input--two" id="txt1-b1"><button class="inputB__one" id="bm1"><</button><button class="inputB__two" id="bM1">></button></div>
+          </div>
+          <div class="keyMouse__input--item" id="item-3">
+              <p>Invert Mouse Look</p> <p class="item__txt" id="txt2">Disable</p><div class="button__input--two" id="txt2-b2"><button class="inputB__one" id="bm2" ><</button><button class="inputB__two" id="bM2">></button></div>
+          </div>
+          <div class="keyMouse__input--item" id="item-4">
+              <p>Mouse Acceleration</p> <p class="item__valor" id="valor2">0.01</p><input class="barra" id="v2" type="range" value="1" min="0" max="100">
+          </div>
+          <div class="keyMouse__input--item" id="item-5">
+              <p>Mouse Filtering</p> <p class="item__valor" id="valor3">2</p><input class="barra" id="v3" type="range" value="20" min="0" max="100"name="" id="">
+          </div>
+          <div class="keyMouse__input--item" id="item-6">
+              <p>Mouse Smoothing</p> <p class="item__txt" id="txt3">Disable</p><div class="button__input--two" id="txt3-b2"><button class="inputB__one" id="bm3"><</button><button class="inputB__two" id="bM3">></button></div>
+          </div>
+        </div>
+      </div>
+      <div class="container__Bey">
+
+      </div>
+    </section>
+    <!--
+   <section class="graph" id="G">
+      Hola 2
+    </section>
+    <section class="audio" id="A">
+      hola 3    
+    </section>
+    -->
+    <script src="script.js"></script>
+</body>
+</html>
